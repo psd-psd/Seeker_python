@@ -1,6 +1,5 @@
 n=int(input('enter the number '))
 a=0
-b=2
 for i in range (2, n):
     a=n%i
     if a==0:
