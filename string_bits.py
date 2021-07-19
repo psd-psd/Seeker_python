@@ -13,3 +13,11 @@ def string_bits(str):
             if i%2==0:
                 x=ch+x
         return x[::-1]
+
+# another method
+
+def string_bits(str):
+        x=''
+        for i in range(0, len(str), 2):
+            x=x+str[i]
+        return x
