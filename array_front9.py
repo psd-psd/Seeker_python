@@ -17,3 +17,19 @@ def array_front9(nums):
             if c==4:
                 return False
         return False
+    
+    
+#     another method
+
+def array_front9(nums):
+    c=0
+    if len(nums)==0:
+            return False
+    else:
+        for i in range(0,4):
+            try:
+                if nums[i] ==9 :
+                    return True
+            except:
+                IndexError
+        return False
