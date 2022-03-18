@@ -16,3 +16,32 @@ def pageCount(n, p):
                 return (1)
             else:
                 return (0)
+
+            
+            
+  #another method
+
+def pageCount(n, p):
+    if n==2*p:
+        if n%2==0 and n-p==1 and p==1:
+            return 0
+        if n%2==0 and n-p==1:
+            return 1
+        elif n%2!=0 and n-p==1:
+            return 0
+        else:
+            return (p)//2 
+    if p>n/2:
+        if n%2==0 and n-p==1:
+            return 1
+        elif n%2!=0 and n-p==1:
+            return 0
+        else:
+            return ((n-p)//2)
+    elif p<n/2:
+        if n%2==0 and n-p==1:
+            return 1
+        elif n%2!=0 and n-p==1:
+            return 0
+        else:
+            return (p)//2
