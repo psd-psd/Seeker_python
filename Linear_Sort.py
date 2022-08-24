@@ -1,15 +1,10 @@
 #sorting an array by mean method
 
-we=[2 ,3, 5, 7, 1, 9, 3, 8, 0, 4]
-avg=sum(we)/2
-left=[]
-right=[]
-i,j=0,0
-while j<len(we):
-    if we[i]<avg:
-        left.append(i)
-    else:
-        right.append(i)
-    j+=1 
-    i+=1
- print(left+right)
+we=[10, 14, 28, 11, 7, 16, 30, 50, 25, 18].
+for i in range(0,len(we)):
+    for j in range(i+1,len(we)):
+        if we[i]>we[j]:
+            temp=we[i]
+            we[i]=we[j]
+            we[j]=temp
+print(we)
